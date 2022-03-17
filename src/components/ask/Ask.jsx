@@ -9,7 +9,7 @@ export default function Ask(props){
             <section className={asktitle} onClick={()=>{
                 setAsktitle('title-disable')
                 setAskname('ask-active')
-            }}>Pergunta {props.number}</section>
+            }}>Pergunta {props.number} <ion-icon name="play-outline"></ion-icon></section>
 
             <div className={askname} onClick={()=>{
                 setAsktitle('title-active')
