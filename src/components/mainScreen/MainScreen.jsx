@@ -1,5 +1,6 @@
 import './MainScreen.css'
 import { deck1 } from '../../decksData/DecksData.js'
+import Ask from '../ask/Ask'
 
 export default function MainScreen(){
     const deck = [...deck1]
@@ -12,9 +13,7 @@ export default function MainScreen(){
                 <text>ZapRecall</text>
             </header>
 
-           {deck.map(e => 
-               <div>{e.ask}</div>
-           )}
+           {loadAsks(deck)}
 
             <footer>0/4 CONCLUÍDOS</footer>
         </div>
@@ -23,4 +22,12 @@ export default function MainScreen(){
 
 function comparator() { 
 	return Math.random() - 0.5; 
+}
+
+function loadAsks(list){
+    const elements = []
+    for(let i=0; i<list.length; i++){
+        elements.push(<Ask number={i+1} ask={list[i].ask}/>)
+    }
+    return elements
 }

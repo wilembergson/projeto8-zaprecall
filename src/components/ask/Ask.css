@@ -1,0 +1,15 @@
+.title-active{
+    display: flex;
+    cursor: pointer;
+    background: rgb(239, 241, 238);
+}
+.title-disable{
+    display:none;
+}
+.ask-active{
+    display: flex;
+    cursor: pointer;
+}
+.ask-disable{
+    display: none;
+}
