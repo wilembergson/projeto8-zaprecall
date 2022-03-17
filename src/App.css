@@ -4,8 +4,7 @@
 main{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    
     background-color: #FB6B6B;
     height: 100vh;
     position: relative;
