@@ -15,7 +15,7 @@ export default function MainScreen(){
 
            {loadAsks(deck)}
 
-            <footer>0/4 CONCLUÍDOS</footer>
+            <footer>0/{deck.length} CONCLUÍDOS</footer>
         </div>
     )
 }

@@ -2,9 +2,21 @@ import React from "react"
 import './QuestionAnswer.css'
 
 export default function QuestionAnswer(props){
-    const {askname, hideAsk, showAnswer, ask, answer} = props
-    const [askOrAnswer, setAskOrAnswer] = React.useState(null)
+    const {askname, showAnswer, hideAnswer, ask, answer, responding} = props
     let page = null
+
+    function sendAnswerRed(){
+        hideAnswer()
+        responding('red')
+    }
+    function sendAnswerYellow(){
+        hideAnswer()
+        responding('yellow')
+    }
+    function sendAnswerGreen(){
+        hideAnswer()
+        responding('green')
+    }
 
     if(askname === 'ask-active'){
         page = <>
@@ -14,6 +26,11 @@ export default function QuestionAnswer(props){
     }else if(askname === 'answer-active'){
         page = <>
                     {answer}
+                    <div className="buttons">
+                        <button className="b-red" onClick={sendAnswerRed}>Não lembrei</button>
+                        <button className="b-yellow" onClick={sendAnswerYellow}>Quase não lembrei</button>
+                        <button className="b-green" onClick={sendAnswerGreen}>Zap</button>
+                    </div>
                 </>
     }
 
@@ -22,21 +39,4 @@ export default function QuestionAnswer(props){
             {page}
         </div>
     )
-    /*
-    if(askname === 'ask-active'){
-        
-        page = <div className={askname}>
-                            {ask}
-                            <img src="images/setinha.png" onClick={() => showAnswer()}/>
-                        </div>
-        
-    }else if(askname === 'answer-active'){
-        page = <div className={askname}>
-                            {answer}
-                        </div>
-    }
-
-    
-
-    return page*/
 }

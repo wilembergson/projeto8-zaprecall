@@ -24,3 +24,16 @@ ion-icon{
 .title-disable{
     display:none;
 }
+
+.red{
+    color: #FF3030;
+    text-decoration-line: line-through;
+}
+.yellow{
+    color: #FF922E;
+    text-decoration-line: line-through;
+}
+.green{
+    color: #2FBE34;
+    text-decoration-line: line-through;
+}
