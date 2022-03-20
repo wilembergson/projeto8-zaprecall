@@ -27,7 +27,7 @@ function comparator() {
 function loadAsks(list){
     const elements = []
     for(let i=0; i<list.length; i++){
-        elements.push(<Ask number={i+1} ask={list[i].ask}/>)
+        elements.push(<Ask number={i+1} ask={list[i].ask} answer={list[i].answer}/>)
     }
     return elements
 }
