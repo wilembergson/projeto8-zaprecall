@@ -3,7 +3,7 @@ import QuestionAnswer from "../questionAnswer/QuestionAnswer"
 import './Ask.css'
 
 export default function Ask(props){
-    const {number, ask, answer, addAnswer} = props
+    const {number, ask, answer, addAnswer, answereds, deck, setFinalMensageKey} = props
 
     const [asktitle, setAsktitle] = useState('title-active')
     const [askname, setAskname] = useState('ask-disable')
@@ -22,8 +22,6 @@ export default function Ask(props){
     }
 
     function responding(status){
-        let color =''
-        let icon = null
         setAsktitle(`title-active ${status}`)
         if(status === 'green'){
             setIcon(<ion-icon name="checkmark-circle-sharp"></ion-icon>)
@@ -41,7 +39,6 @@ export default function Ask(props){
                 <ion-icon name="help-circle-sharp"></ion-icon>
             </div>)
         }
-
     }
 
     return(

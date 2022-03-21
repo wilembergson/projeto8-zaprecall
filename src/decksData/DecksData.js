@@ -10,9 +10,5 @@ export const deck1 = [
     {
         ask: "Vai se comparar com os outros?",
         answer: "Vou tentar não fazer isso."
-    },
-    {
-        ask: "No final, vai dar bom?",
-        answer: "Tem que dar."
     }
 ]
