@@ -1,4 +1,7 @@
 import './MainScreen.css'
+import Logo from "../../images/logo-pequeno.png"
+import Sad from "../../images/sad.png"
+import Party from "../../images/party.png"
 import { deck1 } from '../../decksData/DecksData.js'
 import Ask from '../ask/Ask'
 import { useEffect, useState } from 'react'
@@ -11,7 +14,7 @@ export default function MainScreen(){
     const [finalMensage, setFinalMensage] = useState('final-mensage disable')
     const [finalMensageKey, setFinalMensageKey] = useState(<section>
         <div className='image-status'>
-            <img src="images/party.png"/>
+            <img src={Party}/>
             <strong> Parabéns!</strong>
         </div>
         <div>Você não esqueceu de nenhum flashcard.</div>
@@ -23,7 +26,7 @@ export default function MainScreen(){
                 if(n.props.className === 'red'){
                     setFinalMensageKey(<section>
                         <div className='image-status'>
-                            <img src="images/sad.png"/>
+                            <img src={Sad}/>
                             <strong> Putz!</strong>
                         </div>
                         <div>Ainda faltam alguns... Mas não desanime!</div>
@@ -53,7 +56,7 @@ export default function MainScreen(){
     return(
         <div className="mainScreen">
             <header>
-                <img src="images/logo-pequeno.png"/>
+                <img src={Logo}/>
                 <text>ZapRecall</text>
             </header>
            {loadAsks(deck)}

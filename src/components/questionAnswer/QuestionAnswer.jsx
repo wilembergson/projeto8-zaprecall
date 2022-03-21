@@ -1,4 +1,5 @@
 import React from "react"
+import Arrow from "../../images/setinha.png"
 import './QuestionAnswer.css'
 
 export default function QuestionAnswer(props){
@@ -21,7 +22,7 @@ export default function QuestionAnswer(props){
     if(askname === 'ask-active'){
         page = <>
                     {ask}
-                    <img src="images/setinha.png" onClick={() => showAnswer()}/>
+                    <img src={Arrow} onClick={() => showAnswer()}/>
                 </>
     }else if(askname === 'answer-active'){
         page = <>
