@@ -36,6 +36,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -50,4 +51,17 @@ footer{
     font-size: 20px;
     line-height: 14px;
     color: #333333;
+}
+footer .icons{
+    display: flex;
+    margin-top: 5px;
+}
+footer .green{
+    color: #2FBE34;
+}
+footer .yellow{
+    color: #FF922E;
+}
+footer .red{
+    color: #FF3030;
 }
