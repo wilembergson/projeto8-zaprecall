@@ -40,13 +40,12 @@ export default function MainScreen(){
 
     function addAnswer(icon){
         setAnswereds([...answereds, icon])
-
     }
  
     function loadAsks(list){
         const elements = []
         for(let i=0; i<list.length; i++){
-            elements.push(<Ask number={i+1} ask={list[i].ask} answer={list[i].answer} addAnswer={addAnswer} answereds={answereds} deck={deck} setFinalMensageKey={setFinalMensageKey}/>)
+            elements.push(<Ask number={i+1} ask={list[i].ask} answer={list[i].answer} addAnswer={addAnswer}/>)
         }
         return elements
     }
@@ -59,7 +58,9 @@ export default function MainScreen(){
                 <img src={Logo}/>
                 <text>ZapRecall</text>
             </header>
-           {loadAsks(deck)}
+            <div className='asks'>
+                {loadAsks(deck)}
+            </div>
             <footer>
                 <div className={starter}>
                     {answereds.length}/{deck.length} CONCLUÍDOS

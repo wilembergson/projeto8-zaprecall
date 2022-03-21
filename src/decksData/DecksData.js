@@ -1,14 +1,34 @@
 export const deck1 = [
     {
-        ask: "Seu projeto está pronto?",
-        answer: "Ainda não."
+        ask: "Em qual continente fica o Quirguistão?",
+        answer: "Ásia."
     },
     {
-        ask: "Tá confiante?",
-        answer: "Na medida do possível."
+        ask: "Em qual país Europeu mais próximo da América?",
+        answer: "Islândia."
     },
     {
-        ask: "Vai se comparar com os outros?",
-        answer: "Vou tentar não fazer isso."
+        ask: "Qual o país com o maior número de animais peçonhento no mundo?",
+        answer: "Austrália."
+    },
+    {
+        ask: "Dois paises que se encontram em dois continentes ao mesmo tempo?",
+        answer: "Turquia e Rússia"
+    },
+    {
+        ask: "Onde se encontra a maior cordilheira do mundo?",
+        answer: "América do Sul"
+    },
+    {
+        ask: "Qual o nome da cidade mais ao norte do planeta?",
+        answer: "Barrow, Alasca."
+    },
+    {
+        ask: "Onde se encontra o canal de Suez?",
+        answer: "Egito."
+    },
+    {
+        ask: "Qual a maior ilha do planeta",
+        answer: "Groenlândia."
     }
 ]

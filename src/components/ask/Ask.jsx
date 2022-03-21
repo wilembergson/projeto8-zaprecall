@@ -3,7 +3,7 @@ import QuestionAnswer from "../questionAnswer/QuestionAnswer"
 import './Ask.css'
 
 export default function Ask(props){
-    const {number, ask, answer, addAnswer, answereds, deck, setFinalMensageKey} = props
+    const {number, ask, answer, addAnswer} = props
 
     const [asktitle, setAsktitle] = useState('title-active')
     const [askname, setAskname] = useState('ask-disable')
